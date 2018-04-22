@@ -56,7 +56,6 @@ def send_packet(i, hostname):
         # No reply =(
         print("{index}: <ICMP timeout>".format(index=i))
         # break
-        print "Done!"
     else:  # Still tracing the route
         # get host name, if no name use <No DNS entry>
         try:
@@ -94,5 +93,5 @@ def main(hostname):
     parallel(hostname)
 
 if __name__ == "__main__":
- # main(sys.argv[1:])
-    main("www.google.com")
+    main(sys.argv[1:])
+    #main("www.google.com")
